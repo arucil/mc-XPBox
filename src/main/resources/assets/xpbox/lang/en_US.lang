@@ -1,0 +1,19 @@
+
+tile.xpbox.name=XP Box
+gui.title=XP Box
+gui.button_0=0
+gui.button_1=1
+gui.button_2=2
+gui.button_3=3
+gui.button_4=4
+gui.button_5=5
+gui.button_6=6
+gui.button_7=7
+gui.button_8=8
+gui.button_9=9
+gui.button_del=DEL
+gui.button_alldep=Deposit All
+gui.button_allwd=Withdraw All
+gui.button_dep=DEP
+gui.button_wd=WD
+gui.button_setlv=Set Level

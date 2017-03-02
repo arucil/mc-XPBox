@@ -1,0 +1,16 @@
+[
+{
+  "modid": "xpbox",
+  "name": "XPBox",
+  "description": "Store exp conveniently.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["clocka", "plodsoft"],
+  "credits": "original mod was made by clocka, I (plodsoft) port it to 1.10.2",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

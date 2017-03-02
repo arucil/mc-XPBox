@@ -1,0 +1,15 @@
+{
+   "forge_marker": 1,
+   "defaults": {
+      "textures": {
+         "side": "xpbox:blocks/xpbox_side",
+         "up": "xpbox:blocks/xpbox_top",
+         "down": "xpbox:blocks/xpbox_bottom"
+      },
+      "model": "cube_column"
+   },
+   "variants": {
+      "normal": [{ }],
+      "inventory": [{ }]
+   }
+}
