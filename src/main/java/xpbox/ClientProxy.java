@@ -8,6 +8,6 @@ public class ClientProxy extends CommonProxy {
    @Override
    public void registerItemRenderer(Item item) {
       ModelLoader.setCustomModelResourceLocation(item, 0,
-            new ModelResourceLocation(item.getRegistryName().toString(), "inventory"));
+            new ModelResourceLocation(item.getRegistryName(), "inventory"));
    }
 }
