@@ -58,11 +58,21 @@ public class BlockXPBox extends Block {
 
       switch (op) {
       case MessageOp.WITHDRAW:
+         if (xp > cap.value)
+            xp = cap.value;
+         if (0 == xp)
+            return; // don't send XP message
          player.addExperience(xp);
          cap.value -= xp;
          break;
       case MessageOp.DEPOSIT:
          exp = getTotalXP(player);
+         if (xp > exp)
+            break;
+         if (xp + cap.value > GuiXPBox.MAX)
+            xp = GuiXPBox.MAX - cap.value;
+         if (0 == xp)
+            return; // don't send XP message
          player.experience = 0;
          player.experienceLevel = 0;
          player.experienceTotal = 0;
