@@ -50,16 +50,7 @@ public class XPBox {
    @Mod.EventHandler
    public void init(FMLInitializationEvent e) {
       // register recipe
-      GameRegistry.addShapedRecipe(new ItemStack(blockXPBox),
-            "OGO",
-            "ICI",
-            "ERE",
-            'O', Blocks.OBSIDIAN,
-            'E', Items.ENDER_PEARL,
-            'I', Items.IRON_INGOT,
-            'R', Items.REDSTONE,
-            'C', Blocks.CHEST,
-            'G', Blocks.GLASS_PANE);
+      BlockXPBox.registerRecipe();
 
       // register xp capability
       CapabilityManager.INSTANCE.register(XPCapability.class,

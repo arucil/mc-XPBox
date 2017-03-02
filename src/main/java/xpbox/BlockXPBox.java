@@ -6,13 +6,18 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import javax.annotation.Nullable;
+
+import static xpbox.XPBox.blockXPBox;
 
 public class BlockXPBox extends Block {
    public static final String NAME = "xpbox";
@@ -23,6 +28,19 @@ public class BlockXPBox extends Block {
       setUnlocalizedName(NAME);
       setHardness(.5f);
       setCreativeTab(CreativeTabs.DECORATIONS);
+   }
+
+   public static void registerRecipe() {
+      GameRegistry.addShapedRecipe(new ItemStack(blockXPBox),
+            "OGO",
+            "ICI",
+            "ERE",
+            'O', Blocks.OBSIDIAN,
+            'E', Items.ENDER_PEARL,
+            'I', Items.IRON_INGOT,
+            'R', Items.REDSTONE,
+            'C', Blocks.CHEST,
+            'G', Blocks.GLASS_PANE);
    }
 
    @Override
