@@ -61,7 +61,7 @@ public class BlockXPBox extends Block {
          if (xp > cap.value)
             xp = cap.value;
          if (0 == xp)
-            return; // don't send XP message
+            break;
          player.addExperience(xp);
          cap.value -= xp;
          break;
@@ -72,7 +72,7 @@ public class BlockXPBox extends Block {
          if (xp + cap.value > GuiXPBox.MAX)
             xp = GuiXPBox.MAX - cap.value;
          if (0 == xp)
-            return; // don't send XP message
+            break;
          player.experience = 0;
          player.experienceLevel = 0;
          player.experienceTotal = 0;
@@ -86,7 +86,7 @@ public class BlockXPBox extends Block {
          else
             exp += cap.value;
          if (0 == exp)
-            return;
+            break;
          player.experience = 0;
          player.experienceLevel = 0;
          player.experienceTotal = 0;

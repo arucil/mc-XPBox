@@ -30,8 +30,8 @@ public class XPBox {
    @CapabilityInject(XPCapability.class)
    public static final Capability<XPCapability> XP_CAPABILITY = null;
 
-   @SidedProxy(serverSide = "CommonProxy",
-         clientSide = "ClientProxy")
+   @SidedProxy(serverSide = "xpbox.CommonProxy",
+         clientSide = "xpbox.ClientProxy")
    public static CommonProxy proxy;
 
    @Mod.EventHandler
