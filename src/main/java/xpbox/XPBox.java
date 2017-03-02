@@ -70,7 +70,7 @@ public class XPBox {
    }
 
    @SubscribeEvent
-   public void onPlayClone(PlayerEvent.Clone e) {
+   public void onPlayerClone(PlayerEvent.Clone e) {
       // may be returning from the End or respawning after death
       e.getEntity().getCapability(XPBox.XP_CAPABILITY, null).value =
             e.getOriginal().getCapability(XPBox.XP_CAPABILITY, null).value;
