@@ -80,7 +80,13 @@ public class BlockXPBox extends Block {
          cap.value += xp;
          break;
       case MessageOp.SETLEVEL:
-         exp = getTotalXP(player) + cap.value;
+         exp = getTotalXP(player);
+         if (exp + cap.value < exp)
+            exp = Integer.MAX_VALUE;
+         else
+            exp += cap.value;
+         if (0 == exp)
+            return;
          player.experience = 0;
          player.experienceLevel = 0;
          player.experienceTotal = 0;
