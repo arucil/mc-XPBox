@@ -163,7 +163,7 @@ public class GuiXPBox extends GuiScreen {
 
       updateScreen();
 
-      fontRendererObj.drawString(I18n.translateToLocal("gui.title"), x + 8, y + 4, 0x404040);
+      fontRenderer.drawString(I18n.translateToLocal("gui.title"), x + 8, y + 4, 0x404040);
 
       super.drawScreen(mouseX, mouseY, partialTicks);
    }
