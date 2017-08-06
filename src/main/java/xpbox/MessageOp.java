@@ -37,7 +37,7 @@ public class MessageOp implements IMessage {
       @Override
       public IMessage onMessage(MessageOp message, MessageContext ctx) {
          FMLCommonHandler.instance().getWorldThread(ctx.netHandler).addScheduledTask(
-               () -> BlockXPBox.updateXP(ctx.getServerHandler().player,
+               () -> BlockXPBox.updateXP(ctx.getServerHandler().playerEntity,
                      message.op, message.xp));
          return null;
       }

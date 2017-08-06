@@ -1,5 +1,6 @@
-tile.xpbox.name=ExpContainer
-gui.title=ExpContainer
+
+tile.xpbox.name=XP Box
+gui.title=XP Box
 gui.button_0=0
 gui.button_1=1
 gui.button_2=2
@@ -16,4 +17,3 @@ gui.button_allwd=Withdraw All
 gui.button_dep=DEP
 gui.button_wd=WD
 gui.button_setlv=Set Level
-error.open_message=You can't open ExpContainer on this dimension.
